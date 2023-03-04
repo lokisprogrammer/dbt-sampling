@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: booking_facts
+    description: >
+      This model denormalizes the bookings table and adds a few calculated fields.
+    columns:
+      - name: booking_id
+        description: The unique identifier for the booking
+        tests:
+          - not_null
+      - name: created_at
+        description: The date the booking was made
+      - name: start_date
+        description: The date the booking starts
+      - name: end_date
+        description: The date the booking ends
+      - name: duration
+        description: The duration of the booking in days. Calculated as end_date - start_date
