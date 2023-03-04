@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: src_properties
+    columns:
+      - name: property_id
+        tests:
+          - not_null
+          - unique
+      - name: name

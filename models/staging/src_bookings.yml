@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: src_bookings
+    columns:
+      - name: booking_id
+        tests:
+          - not_null
+      - name: user_id
+      - name: site_id
+      - name: created_at
+      - name: start_date
+      - name: end_date

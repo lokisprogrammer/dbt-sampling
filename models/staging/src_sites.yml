@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: src_sites
+    columns:
+      - name: site_id
+        tests:
+          - not_null
+          - unique
+      - name: property_id
+      - name: type
+      - name: price_per_night

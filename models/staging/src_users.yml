@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: src_users
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: first_name
+      - name: last_name
+      - name: email
+      - name: phone
